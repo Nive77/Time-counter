@@ -1,0 +1,124 @@
+/* header */
+.header{
+    text-shadow: 3px 5px 8px #00d0ff;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.outer-circle{
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    background-color: rgb(0, 238, 255);
+    box-shadow: 200px aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgb(0, 187, 255);
+    
+}
+.inner-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.time{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.739);
+    position: relative;
+    box-shadow: 0 0 13px rgb(0, 0, 0);
+}
+.time-count{
+    text-shadow: 0 0 3px #00d0ff;
+    position: absolute;
+    left:19px;
+    top:13px;
+    display: flex;   
+}
+.time-container{
+    width: 41.5%;
+    position: absolute;
+    top: 250px;
+    left:170px
+}
+
+/* input field */
+.form{
+    background-color: black;
+    color: aqua;
+    border-color: aqua;
+    border-radius: 1rem;
+    text-align: center;
+}
+.button{
+    background-color: black;
+    color: rgb(0, 255, 0);
+    border-color:rgb(0, 255, 0);
+    border-radius: 1rem;
+    font-size: larger;
+    padding: 0.5rem;
+}
+input{
+    width: 41.5%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: black;
+    border-color: aqua;
+    color: aqua;
+    
+}
+.left{
+    width: 40%;
+    height: 500px;
+   
+    position: relative;
+}
+
+/* time-number */
+.number {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.entries {
+    width: fit-content;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    text-align: center;
+}
+
+.entry {
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr;
+    background-color: rgb(114, 168, 193);
+    padding: 0rem 0.4rem 0rem 0.4rem;
+}
+
+.entry:nth-child(odd) {
+    background-color: rgb(183, 212, 222);
+}
+
+.entries-heading {
+    background-color: rgb(25, 54, 84) !important;
+}
+
+.right{
+    position: absolute;
+    top:159px;
+    left:700px;
+}

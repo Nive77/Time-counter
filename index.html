@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <style>
+        .animate-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(12, 249, 16, 0.188);
+            
+        }
+        .pulse{
+            animation: pulse 2s infinite; 
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.6;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.8);
+                opacity: 0.6;
+            }
+        }
+        
+    </style>
+</head>
+<body style="background-color: black;">
+    <div>
+        <h1 class="header">Time Counter</h1>
+    </div>
+    <div class="left">
+        <div class="form">
+                <input id="task" placeholder="task" type="text"><br><br>
+                <input id="description" placeholder="Description" type="text"><br><br>
+                <button id="button" class="button" onclick="">Start</button>
+        </div>
+        <div class="time-container">
+        <div class="outer-circle">
+            <div class="inner-circle">
+                <div class="time">
+                <h3 class="time-count">
+                    <p class="number" id="hour">00</p>
+                    <p class="number">:</p>
+                    <p class="number" id="minutes">00</p>
+                    <p class="number">:</p>
+                    <p class="number" id="seconds">00</p>
+                </h3>
+                </div>   
+            </div>
+        <div class="animate-circle "></div>  
+    </div>
+</div>
+</div>
+<div class="right">
+<div class="entries" id="entries">
+    <div class="entries-heading entry">
+        <div>Task</div>
+        <div>Description</div>
+        <div>Duration</div>
+    </div>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+
+</html>
